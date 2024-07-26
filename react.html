@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    
+    <!-- React 라이브러리 로드 -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    
+    <!-- Babel 라이브러리 로드 (Babel Standalone) -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <script type="text/babel">
+        // React 컴포넌트에서 사용할 데이터 정의
+        const name = '구름';
+        const imgUrl = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAAIDBAYBB//EADUQAAIBAgQEAwcEAgIDAAAAAAECAwARBBIhMQUTQVEGImEUMkJScYGhI5HB0QdisfAVouH/xAAYAQADAQEAAAAAAAAAAAAAAAAAAQIDBP/EAB8RAQADAAMBAQADAAAAAAAAAAABAhEDITESURMiQf/aAAwDAQACEQMRAD8A8krop1q6q67VLVf4FgJMfj44Y1BDHW+gr1rCeAME0CGVTnUam+9Z7/GXDrFsU9iNgLXr1R3yplFYXvPjatWQPgzh4VlEel/2quvgjCjFpKoIsLFb6EVskzHRh96njjArCL21cxDGnwPhWKtY3Ayn1FOw/gTBwyg6ta4v6VtgorpUA2o/kkvmGUPg3BNEkZTyK2bb6/3UkHg3AwuGyagVqU0rp6+tP7lOM+eAxoDyyRbanYfhByXcm16PqveutbLU7ps8/Dwz6ZgKsR8MiYAFiCKJOAo0UVTd2iFxrSi2Sqa6hn4VaNuS7bbKbX+9BZpYYAWmlSMDqd/3atJBiRkOlYLx9hFZUxSKq2JDkaGujj5d6Y2odjfEfC4b+d8Qw7AkH7mwoJjPFuIk0wcCRqOrXY/wKz5Kn3bu3SwvTSkjHWy36HU1v9SiKxC43GOJsb+1EfRrf8UqqciL4i7Hve380qlWM6Aacqkn6U4W6XqfDRmSQKqm5p6l6Z4CkROGxx59Qxvp/Va9cS8k1r3A61ivCsfK4flZsp+lavhcSqt1YmuW/rpr4NxN5RepwQDpVSM6VKH1rGTWc1IGw1qHPSD3pBZB0roN6hV7C1dEmlGjFm+lMZtKi5mg1rhcWo1OHNqdKpYwFgQlWc1qZJYra1HqgZnkhJzNpQfxIhn4ZKGTN1saIcTV0k5mbQfiqONY4jh8pW58p6VXH1YW7h57NnHlsVFtl0FQGQBQrSZB1y6VJjkPtDc2QKo71AUhAUhXk7X8oruYaYzxX8qMw7kUqkBlPuAKvYJ/dKgaCAgmy+c9l1q/gsJPI4yoU9WNE0VI1yqqi25PlFOSYB1yebX4RYUJxsOAwzJhgGOa3UnetNhyEFiND1BoLwRGOEQuBrrYGiWfItr2rmv63oJJMBsakEw70DOIIPvL+9cXGqR74/esZUPc0DY6UjNa29BBjjrbYdakTGsd9qkxlZx3rhxFzvQNuIIG0NIY5G91iaWAfE3rTubQaPFjqal9puN6AKLLruKkzZhQb2m3UEelTw4q50NVBLOKw6ToVYaUFxuH5eGlQWAynQCjyMWHSqnEMMs0ZAFtN61r6ienkEqs2JYtEfKbZyALfc0zm53JjiJYaZnai3H8G0OLdXVmAOgJsooS+UCykZumUaV1QyIs3zR/teu1HlUk+WRrG19qVASRrANs8pHy6fmrELZWHlhhHa+ZqpCZn+J3/wBUFhTxzi2VUCn0FzVZI16PwaWNsGuW7adqi4jMUJIbS1VuBTIcMsaOVcb0sdBI9xcEd71zXjZa0kKn4nypACTY7m9dPEluHWcMo3Fqq4zhOIlByiwrOcY4dicFh3lzeVd/SprVUy2q8Qif9SNyT2J2rj8QWx8wBtpfrXl3C+LzYGRuaWlBIGUnUHuKPR8cTEOBAGO2ZeoqrcUwmvJEtW3EbeY9BqKjTipvbagD4rMMxEgddbMpH8VGsmImbyw3+gOv3qPmF62UPEXa3lF/Wuvx1IXCySLc96xmM8RHBQ8kQuZgLEn4DWUnm9oMczTyvOxOfPYBTfS3pa3/AHWtacO9srcuTj15+OxZwEBNE8Djs5BtasbwzhuJfAQYi6nOoIUjWjuAaSMgSx2NtxXPevbaJ2Gxw+JDWq1JPZDYXNqEYJlZVNT4pwsdzfTr0qqM7SxHjGUTYvKy8sDcHc1nOYt8sMZdu5/ui/iGVJOIkMxkZR7gG1CnkYKczJCl9VUXauuPGWnGGU6yPGhOuUDalTEAZbx4FpF+Z73NKgLIKgZYr6/LoKTzsgKF1UHbILmoypICSSCw+GPU04COPRVVbdZDmP7CtC0R4JizDcHNkO5N9a1uFnjkUGyG+1t6wwjlcA5GIv70vlUfQCjvDZ2RARIGC6Egafasr1OJa3kxGO5W33oRxXh8WJhaF4wyuCCPQ1LFxWG4UXZrU3EY5V90knuelZTCon9Yc/4+hJZjM6quqkD3vT/7Wv8AC3hjh/BYVLxXnfeSRr6enarWDm9txCEtlVN76Zj6Vf41i4sDwLFTo4M0ULMFYg3sKf8Aa/Rx817BeMnDxSyfo50tlBNqu+HcTgpICjxLofKQOleK/wDmMTiDLLi5JWmOt85At2tWt/xhxHEycYKSI/s/KJ1+Hta9FuARzbLW+JvCGC4i/OjPLLC0ltNO/wBaBQf4wCzI747PANSoWzN99q9FfBJiFvmFtDdrmo1VoSRLIhAFlIW2lTE3r0dorPaDDcOREWKNQqILBe1Ttw1WW1hUqTIGsra9xtUxluu4+1ThfYMYHwz2G3aqvFscmHwTyGS+nuE7mimOkyoXJGUC5PavPeNcVmxmKYQ5VRPdc6/itKUTayjK80jGWVlw0b3uT7x/uoObFHb2SEu3R5P6pZS5Mj+ZvnkOlPij5rWiTm+oFlH/AH1rZMb/AKYWnkOZsRKT3jBI/FKrDLCpy4jGBZBusewpUlZCURxoP1ZQB8sel/vT48qi+GhCDq7f2a6sTHVVC+r10pEiFpnMnp0rRLhUStZi8zfKg0rRR4U4bAqmgI1IrPxYlzIBGrIgO6i1q0LSZ4A1zY7E7mpsYZiMa2HuFRCO5WqE3EGdbnPpsAxN6sY1C16Dzc2JiyEjpUYF/BcfOGJEi+a97kXApvGPFCcQhaCQAm1i4Gp/r7UJlZH94W9aqyQre42PanEYJBcXgoVkJhlsgGgbW1aTwvxLC8HJMrNIx7WuR2oe8CupDKp+oqxgolWwVVA+lVrOKy3cHjSOQjlkonTuPtU8nibnzLZ7W6tsaymHw0ZN8t/pRVcPGYjm2Btp0rO0a0jppoeMRzIC2mljrUr8QULYFj2PpWaSNY9MxPbXerTJJ7BI5bLZetKKjTOM8ZDwNDnFmGutZoK0zWhQkDd20ApNNh4nuqtiJPmPuiuMmJxJ/Wkyp8imwFaRBa7J7MjWkb2mUa2U+UfXvTz7RKF8wji+UC3796bzIYR5AMve1QviHLXDfQUFqQpD86mlUN5G1JsfpXKB0IMZHN5HtfpvTfIhva3+zmnBjqBv2pckHWQhV9dTWhmF7m1849TatEjFokBHwigPkBGRSxHxGj89sOUJHlyiotOCFbELuAL0LxEJJAbQUbkbOoIK2O1qHypck0gDy4W2wqu0FulHRHca6mopcJe9hrTwaDCC9dEDDaifsttLVKmEI8x2B1owtUIxIo0NjRHDrNIdTrU6YYeWwtV/DQ5G03o+T03B4Ry4zDQVf4ph1fhcsROUFd6niUIRfeqXiOQDhkgD5T6HenjPWSM0UAIiW5BtcdfrVd5pJt9+w2paKo5hv9KUaSSmyqAB1ttQpxUAPnbL9asYaNHVssTMR12/PT81zlQQ35h5r9ugqRVmmAJ/Rh9TYVJ4ZycP8cxLdcouB6a12pTHhE8pR5D82a1KmeQnUsVtEmXuTTCik63kPW21SCAnWZ/L/sdPtTjJEBaFS/8AxVkWGV2mQZLqG/mjvFbSxGw83SgcbyGVGYiwYEAaAUWxDiUEVlyQugTBiAhKu1gNBfrXROjvowIqrxBTfy96ECVoGvn0O9KtitDVKUzCxBFTABr1mMPxQLe+npV+Li4KkZhWmoFgiqxPSpmsQbe6dqoJiDImbMLZaf7SI1Aci56UyXleMxH02qWGTORlWh8ZzMSNu1XMO2Y5RpegtE0uDY70D8WPI8UMSAWZySfoKOx+4B1G9BfFETyYfDiIG/MsSOgtSkQzQjhh3u7fKDp96lVJsQoLeVPTQCpFjhw6kyHmnsNhUU2JeVsiNp8qjQUsWkQxYYX0c9+lQS4iadxlvYVwREteX9rU9WA8qLvTwemjD3F2Yk+ppVyznp/7UqAIOLsDJIXY99hTzHlXMwyjpenx3a/syb/ERThFGtzKxZj0BqjlEpOcBELNfWp5JFniNmy2NitIO7DJGuUegqjiYmU8yN8snU96m1dEThs8UpsxOh2oNjBa+YXNXZsbImjgehvvQzESmS5PWpihTbpTmY9KpvI6k5XYferUg13qpLp00rTGerGH4vioGBLlgBtRzBY5pXV22IrJuLb1f4XiRcxtqo1B7UpVD0LBYgZsoF9N6JwIVNxashgcYQRdt+tGsNi2OjSfal9DB3mtex1NB/EuLCpDCGBN8x+1WDjo4VzFgFHxGs1jZxi8dJMCSuwJ9KUdyfjgDzHrf6VMYRCPNo/UUsOWv5DY9zT1VWblr+ofmbS1MYaYSSHk0j/JpyRqqkpovUt/JrrPFBbmSGRxso1tUXKnxZ5k36UI2J2+w60xv4jkxSK5AzP6roKVWCmGj8vKVrdWvc0qWn8iGMmdG5aHKp+UWpRxqUU2/NKlVmfMMhsulqG44kZjfXvSpUJkEkNySdary0qVDOVWTc1Xm0F9z60qVJUKhNzrVjAACUjvpXaVKfALAZDYE0Rwkz5gL0qVZtUnF5n8kYPlvc+tRRed0UnQjpSpVUIhaDF5FS9lvawqXFyNCqpGbBtSeppUquEz6l4ZBG6PPIuZkOgO1Nxk8lkN9W/H0rtKhdVBmN6VKlUm/9k='; // 이미지 데이터
+        
+        // React 컴포넌트 정의
+        const component = (
+            <div>
+                <h1>{name}님 안녕하세요!</h1>
+                <img src={imgUrl}/>
+            </div>
+        );
+ 
+        // 'root' 요소를 찾고, React 컴포넌트를 그 요소에 렌더링
+        const container = document.getElementById('root');
+        ReactDOM.render(component, container);
+    </script>
+</head>
+<body>
+    <!-- React 컴포넌트를 렌더링할 컨테이너 -->
+    <div id="root"></div>
+    
+    <!-- 이 스크립트 블록은 사용되지 않음 -->
+    <script type="text/babel"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetandSet</title>
+    <script>
+        class Sqaure{
+            #length
+            constructor(length){
+                this.Length= length
+            }
+            set Length(value){
+                if(value <=0){
+                    throw'길이는 0보다 커야합니다.'
+                }
+                this.#length=value
+            }
+            get Length(){
+                return this.#length
+            }
+            get Peri(){return 4*this.#length}
+            get Area(){return this.#length * this.#length}
+        }
+        const sq = new Sqaure(10)
+        console.log(`한 변의 길이는 ${sq.Length}입니다.`)
+        console.log(`둘레는 ${sq.Peri}입니다.`)
+        console.log(`넓이는 ${sq.Area}입니다.`)
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

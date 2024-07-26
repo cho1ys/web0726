@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>private</title>
+    <script>
+        class Sqaure{
+            #length
+            constructor(length){
+                if(length <=0 ){
+                    throw '길이는 0보다 커야 합니다'
+                }
+                this.#length = length
+            
+            }
+            getPeri(){return 4*this.#length}
+            getArea(){return this.#length * this.#length}
+        }
+
+        const sq = new Sqaure(10)
+        sq.length = -20
+        console.log(`정사각형의 둘레: ${sq.getPeri()}`)
+        console.log(`정사각형의 넓이: ${sq.getArea()}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
